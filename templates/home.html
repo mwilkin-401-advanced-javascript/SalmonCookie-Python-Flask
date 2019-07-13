@@ -9,19 +9,41 @@
 </head>
 <body>
   <header>
-    <nav>
-      <a href="/sales">Sales Page</a>
-      <a href="/info">Store Information Page</a>
-      <a href="/about">About Us</a>
-      <a href="/merch">Merchandise</a>
-    </nav>
+    {% include 'nav.html' %}
   </header>
   <main>
     <p>Hello Salmon cookie</p>
     <p>{{name}}</p>
+    <section id='hero'>
+      <img src="static/images/salmon.png" alt="salmon picture">
+      <!-- <img id=salmonPic src="https://github.com/DevStation-COCC/bend-201d2/blob/master/class-06-dom-objects-domain_modeling/lab/assets/salmon.png?raw=true" alt="Pictue of Salmon"/> -->
+    </section>
+    <section id="info">
+      <h2>Our Locations</h2>
+        <h3>Old Mill</h3>
+        <p>380 SW Powerhouse Dr, Bend, OR 97702</p>
+        <p>Hours of Operation: 10AM -10PM, 7 days a week</p>
+        <h3>Pilot Butte</h3>
+        <p>1000 NE 12th St, Bend, OR 97702</p>
+        <p>Hours of Operation: 10AM -10PM, 7 days a week/p>
+        <h3>Les Schwab Amphitheater</h3>
+        <p>344 SW Shevlin Hixon Dr, Bend, OR 97702</p>
+        <p>Hours of Operation: 10AM -10PM, 7 days a week</p>
+        <h3>Tower Theater</h3>
+        <p>835 NW Wall St, Bend, OR 97701</p>
+        <p>Hours of Operation: 10AM -10PM, 7 days a week</p>
+        <h3>Drake Park</h3>
+        <p>777 NW Riverside Blvd, Bend, OR 97701</p>
+        <p>Hours of Operation: 10AM -10PM, 7 days a week</p> 
+    </section>
+    <section id="images">
+        <img src="static/images/fish.jpg" alt="fish cookie cutter">
+        <img src="static/images/frosted-cookie.jpg" alt="Frosted Fish Cookie">
+    </section>
   </main>
   <footer>
     <p>Cool Footer</p>
+    <img src="static/images/chinook.jpg" alt="chinook picture">
   </footer>
 </body>
 </html>
