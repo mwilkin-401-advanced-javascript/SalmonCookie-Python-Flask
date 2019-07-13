@@ -6,8 +6,8 @@ app = Flask(__name__)
 @app.route('/')
 def hello():
     # return f"Hello, { NAME }"
-    return render_template("hello.html", name=NAME)
+    return render_template("home.html", name=NAME)
 
-@app.route('/numbertwo')
+@app.route('/sales')
 def second_route():
-    return render_template("numbertwo.html", name=NAME)
+    return render_template("sales.html", name=NAME)
