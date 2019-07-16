@@ -2,13 +2,24 @@
 
 ## Authored by Matt Wilkin
 
+* [Submission PR]()
+
+* [Heroku](https://rocky-anchorage-53362.herokuapp.com/)
+
+### Documentation
+
+
+### Components
+
+
+### Dependencies
+
 
 ### How to build and run
 
-
 `git clone repository`
 
-`cd (folder name`
+`cd (folder name)`
 
 `virtualenv env && source env/bin/activate`
 

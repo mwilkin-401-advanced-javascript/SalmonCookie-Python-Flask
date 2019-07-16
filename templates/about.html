@@ -1,26 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  {% include 'headMeta.html' %}
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
   <title>About Us</title>
 </head>
 <body>
   <header>
     <nav>
-      <a href="/">Home</a>
-      <a href="/sales">Sales Page</a>
-      <a href="/info">Store Information Page</a>
-      <a href="/merch">Merchandise</a>
+      {% include 'nav.html' %}
     </nav>
   </header>
   <main>
     <p>About Us Page</p>
+    <img src="static/images/family.jpg" alt="family photograph">
+    <!-- <img id=salmonPic src="https://github.com/DevStation-COCC/bend-201d2/blob/master/class-06-dom-objects-domain_modeling/lab/assets/salmon.png?raw=true" alt="Pictue of Salmon"/> -->
+    <p>We are a fun loving, fish cookies eating family. Love fish!</p>
   </main>
   <footer>
-    <p>Cool Footer</p>
+    {% include 'footer.html' %}
   </footer>
 </body>
 </html>

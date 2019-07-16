@@ -1,28 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/info.css') }}">
+  {% include 'headMeta.html' %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Store Information</title>
 </head>
 <body>
   <header>
     <nav>
-      <a href="/">Home</a>
-      <a href="/sales">Sales Page</a>
-      <a href="/about">About Us</a>
-      <a href="/merch">Merchandise</a>
-    </nav>
+      {% include 'nav.html' %}
   </header>
   <main>
     <p>Store Information</p>
     <p>{{ name }}</p>
-  
+    {% include 'storeInfo.html' %}
   </main>
   <footer>
-    <p>Cool Footer</p>
+    {% include 'footer.html' %}
   </footer>
 </body>
 </html>
